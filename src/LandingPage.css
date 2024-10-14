@@ -1,50 +1,96 @@
 /* LandingPage.css */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-  }
-  
-  #landing {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(135deg, #3a7bd5, #3a6073);
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  #landing h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-  }
-  
-  #landing p {
-    font-size: 1.5rem;
-    margin-bottom: 40px;
-  }
-  
-  #landing button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    background-color: #ff9900;
-    color: white;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-  }
-  
-  #landing button:hover {
-    background-color: #000000;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+#landing {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#landing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('background.jpeg'); /* Adjust this path as needed */
+  background-size: cover;
+  background-position: center;
+  filter: opacity(0.4); /* Set opacity for the background image */
+  z-index: -1; /* Keep the background behind other elements */
+}
+
+#landing h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: #00FF00; /* Digital green color */
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Green shadow */
+}
+
+#landing p {
+  font-size: 2rem;
+  margin-bottom: 60px;
+  color: #0e200e; /* Digital green color */
+  text-shadow: 1px 1px 3px rgba(0, 255, 0, 0.5); /* Green shadow */
+}
+
+/* Button container styles */
+.button-container {
+  display: flex;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-bottom: 30px; /* Space below buttons */
+}
+
+#landing button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #ff9900; /* Default background color */
+  color: white; /* Text color */
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+}
+
+/* Hover state styles */
+#landing button:hover {
+  background-color: #00FF00; /* Change background to green on hover */
+  color: black; /* Change text color to black on hover */
+}
+
+/* Button styles for the main action button */
+#landing .main-button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  background-color: #00FF00; /* Default background color for main button */
+  color: white; /* Text color for main button */
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for background and text color */
+}
+
+/* Hover state styles for the main action button */
+#landing .main-button:hover {
+  background-color: #000000; /* Change background to black on hover */
+  color: #ff9900; /* Change text color to orange on hover */
+}
