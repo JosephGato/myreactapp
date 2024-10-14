@@ -1,0 +1,50 @@
+/* LandingPage.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+  }
+  
+  #landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #3a7bd5, #3a6073);
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  #landing h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+  
+  #landing p {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+  
+  #landing button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #ff9900;
+    color: white;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #landing button:hover {
+    background-color: #000000;
+  }
+  
