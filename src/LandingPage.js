@@ -10,7 +10,7 @@ const LandingPage = () => {
 
   return (
     <div id="landing">
-      <h1>Welcome to Our Website</h1>
+      <h1>Welcome to my React Website</h1>
       <p>Your journey to success starts here.</p>
       <button onClick={handleLearnMore}>Learn More</button>
     </div>
